@@ -1,0 +1,484 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #1e1e1e;
+}
+
+.navbar {
+            background-color: #333;
+            overflow: hidden;
+            padding: 10px 20px;
+            position: relative;
+        }
+        .navbar a {
+            float: right;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .navbar .logo {
+            float: left;
+            font-size: 22px;
+            font-weight: bold;
+            color: #fff;
+        }
+        .navbar .logo span {
+            color: #4CAF50;
+        }
+        .navbar .icon {
+            display: none;
+            position: absolute;
+            right: 20px;
+            top: 10px;
+        }
+
+
+.team {
+    display: flex; /* Use flexbox for the team members */
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: center; /* Center team members */
+}
+
+.team-member {
+    margin: 10px; /* Adjust margin for better spacing */
+    width: 150px; /* Adjust width for better fit */
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7); /* Darker shadow for a subtle effect */
+}
+
+.team-member h4 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+}
+
+.product-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.product-section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between products */
+}
+
+.product-card {
+    background-color: #1e1e1e; /* Card background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    transition: transform 0.3s; /* Animation effect */
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.product-card img {
+    width: 100%; /* Responsive image */
+    border-radius: 10px; /* Rounded corners for image */
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.product-card p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 18px;
+    color: #f39c12; /* Accent color for price */
+    font-weight: bold;
+}
+
+.contact-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center; /* Center the info items */
+    margin-bottom: 40px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.info-item {
+    background-color: #1e1e1e; /* Card background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    margin: 10px;
+    width: 250px; /* Fixed width for info items */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+.info-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    background-color: #1e1e1e; /* Form background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    max-width: 600px; /* Limit form width */
+    margin: 0 auto; /* Center the form */
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%; /* Full width */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    background-color: #333; /* Darker input background */
+    color: #ffffff; /* Light text color */
+}
+
+.contact-form button {
+    background-color: #f39c12; /* Accent color for button */
+    color: #ffffff; /* Button text color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.contact-form button:hover {
+    background-color: #e67e22; /* Darker shade on hover */
+}
+
+/* Responsive Styles */
+/* Footer Section */
+.footer {
+    background-color: #121212; /* Dark background */
+    color: #fff; /* Light text */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer .row {
+    display: flex;
+    flex-wrap: wrap; /* Allow the columns to wrap on smaller screens */
+    justify-content: space-between;
+}
+
+/* Column Style for Each Section */
+.col-md-4,
+.col-md-4,
+.col-md-4,
+.footer-social {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-left p {
+    font-size: 1.1rem;
+    color: #ddd; /* Light gray text for copyright */
+    margin-bottom: 20px;
+}
+
+.col-md-4 ul,
+.col-md-4,
+.col-md-4 ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.col-md-4 ul li,
+.col-md-4 ul li,
+.col-md-4 ul li {
+    margin: 5px 0;
+}
+
+.col-md-4 ul li a,
+.col-md-4 ul li a,
+.col-md-4 ul li a {
+    color: #fff; /* White links */
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.col-md-4 ul li a:hover,
+.col-md-4 ul li a:hover,
+.col-md-4 ul li a:hover {
+    color: #f1a800; /* Golden color for hover effect */
+}
+
+/* Social Media Icons */
+.col-md-4 .social-icons a{
+    color: #fff; 
+    text-decoration: none;
+}
+
+.col-md-4 .social-icons a:hover{
+    color: #f1a800; /* Golden color for hover effect */
+    text-decoration: none;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .footer .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-left,
+    .footer-center,
+    .footer-right,
+    .footer-social {
+        width: 100%; /* Take full width on mobile */
+        padding: 10px;
+    }
+
+    .footer-center ul,
+    .footer-right ul,
+    .footer-social ul {
+
+        flex-direction: column;
+    }
+
+    .footer-social ul li {
+        margin: 10px 0;
+    }
+}
+
+
+       @media screen and (max-width: 600px) {
+            .navbar a {
+                float: none;
+                display: none;
+                text-align: left;
+            }
+            .navbar a.icon {
+                float: right;
+                display: block;
+            }
+            .navbar.responsive {position: relative;}
+            .navbar.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            .navbar.responsive a {
+                        margin: 1rem 1rem;
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        }
+
+.cta .book-button {
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta .book-button:hover {
+    background-color: #c62828;
+}
+
+
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 20px; /* Slightly smaller font size for tablets */
+    }
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 10px; /* Smaller font size for mobile */
+        padding: 0 20px; /* Optional: Add padding for better spacing on small screens */
+    }
+}
+
+@media (max-width: 768px) {
+
+    .cta-button {
+        font-size: 14px; /* Slightly smaller font size */
+        padding: 10px 25px; /* Adjust padding for smaller devices */
+    }
+}
+
+.hero {
+    background-image: url('home-img.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    color: #ffffff;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 10px 0 20px;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    background-color: #f44336;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #c62828;
+}
+
+.about-section {
+    padding: 50px 20px;
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center vertically */
+}
+
+.about-text {
+    flex: 1; /* Take up one part of the flex container */
+    max-width: 600px; /* Limit width */
+}
+
+.about-text h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.about-images {
+    flex: 1; /* Take up one part of the flex container */
+    display: flex; /* Use flexbox for the images */
+    justify-content: center; /* Center images */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column; /* Stack the text and images vertically on smaller screens */
+        align-items: center; /* Center everything horizontally */
+    }
+
+    .about-text {
+        max-width: 100%; /* Allow the text to take up full width */
+        margin-bottom: 30px; /* Add space below the text */
+    }
+
+    .about-images {
+        max-width: 100%; /* Make sure the images don't overflow */
+        margin-top: 20px; /* Add space above the images */
+    }
+
+    .about-text h2 {
+        font-size: 28px; /* Slightly smaller font size */
+        margin-bottom: 15px; /* Reduce space below the heading */
+    }
+
+    .about-text p {
+        font-size: 14px; /* Slightly smaller font size for better readability on small screens */
+        margin-bottom: 20px; /* Reduce bottom margin */
+    }
+}
+
+@media (max-width: 480px) {
+    .about-text h2 {
+        font-size: 24px; /* Further reduce font size */
+    }
+
+    .about-text p {
+        font-size: 13px; /* Adjust paragraph size for very small screens */
+    }
+}
+
+
